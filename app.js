@@ -24,13 +24,13 @@ async function getPictures(input){
       console.log(nasaList[i])
       let nasaDiv = document.createElement('div')
       let nasaPicture = document.createElement('img')
-      h2.append(movieDiv)
-      nasaDiv.classList.add('nasa')
+      h2.append(nasaDiv)
+      nasaDiv.classList.add('picture')
       nasaDiv.textContent = nasaList[i].Title
-      nasaPictures.src = `${movieList[i].Url}`
-      nasaDiv.appendChild(nasaPicture)
+      nasaPicture.src = `${nasaList[i].Url}`
       nasaDiv.textContent = nasaList[i].Explanation
-      let result = document.querySelector('.nasa-list')
+      nasaDiv.appendChild(nasaPicture)
+      let result = document.querySelector('.nasa-pictures')
       result.appendChild(nasaDiv)
       i++
     }
