@@ -1,5 +1,23 @@
 {
   "dependencies": {
     "axios": "^0.24.0"
-  }
+  },
+  "name": "Shopify-challenge",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/henrypat1/Shopify-challenge.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/henrypat1/Shopify-challenge/issues"
+  },
+  "homepage": "https://github.com/henrypat1/Shopify-challenge#readme",
+  "description": ""
 }
