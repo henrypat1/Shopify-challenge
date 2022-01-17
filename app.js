@@ -2,7 +2,7 @@ const DOMAIN = 'https://api.nasa.gov/planetary/apod';
 const API_KEY = '76AJY5jTzJlxYCjVZbgKF2dRSS7oaTDk3GHtpbr7'
 const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`;
 // const BASE_URL = 'https://api.nasa.gov/planetary/apod?api_key=c9euw6GQ4toPdwuHs7UdScoXCi89D04WrVIujZ2H'
-const searQueries = []
+// const searQueries = []
 
 let text = document.querySelector('#search')
 let input = document.querySelector('#blank')
