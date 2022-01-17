@@ -27,9 +27,9 @@ async function getPictures(input){
       h2.append(nasaDiv)
       nasaDiv.classList.add('picture')
       nasaDiv.textContent = nasaList[i].Title
-      nasaPicture.src = `${nasaList[i].Url}`
-      nasaDiv.textContent = nasaList[i].Explanation
-      nasaDiv.appendChild(nasaPicture)
+      // nasaPicture.src = `${nasaList[i].Url}`
+      // nasaDiv.textContent = nasaList[i].Explanation
+      // nasaDiv.appendChild(nasaPicture)
       let result = document.querySelector('.nasa-pictures')
       result.appendChild(nasaDiv)
       i++
