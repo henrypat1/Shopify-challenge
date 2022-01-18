@@ -1,4 +1,5 @@
 const DOMAIN = 'https://api.nasa.gov/planetary/apod';
+// const DOMAIN = 'https://api.nasa.gov/planetary/earth/imagery'
 const API_KEY = '76AJY5jTzJlxYCjVZbgKF2dRSS7oaTDk3GHtpbr7'
 const BASE_URL = `${DOMAIN}?apikey=${API_KEY}&`;
 // const BASE_URL = 'https://api.nasa.gov/planetary/apod?api_key=c9euw6GQ4toPdwuHs7UdScoXCi89D04WrVIujZ2H'
@@ -15,6 +16,11 @@ function storeText() {
   console.log(input)
 }
 
+// form.addEventListener('submit', (e) => {
+//   e.preventDefault()
+//   const input = document.querySelector('title').value
+//   console.log(input)
+// })
 async function getPictures(input){
   try {
     const response = await axios.get(`${BASE_URL}s=${input.value}`)
@@ -27,9 +33,9 @@ async function getPictures(input){
       let nasaPicture = document.createElement('img')
       h2.append(nasaDiv)
       nasaDiv.classList.add('picture')
-      nasaDiv.textContent = nasaList[i].Title
-      nasaPicture.src = `${nasaList[i].Url}`
-      nasaDiv.textContent = nasaList[i].Explanation
+      nasaDiv.textContent = nasaList[i].Date
+      // nasaPicture.src = `${nasaList[i].Url}`
+      // nasaDiv.textContent = nasaList[i].Explanation
       nasaDiv.appendChild(nasaPicture)
       let result = document.querySelector('.nasa-pictures')
       result.appendChild(nasaDiv)
