@@ -47,10 +47,12 @@ async function getPictures(input){
       nasaPicture.src = `${nasaList[i].Url}`
       nasaDiv.textContent = nasaList[i].Explanation
       nasaDiv.appendChild(nasaPicture)
+      x.classList.toggle("fa-thumbs-down");
       let result = document.querySelector('.nasa-pictures')
       result.appendChild(nasaDiv)
       i++
     }
+
   
   } catch (error) {
     console.error(error)
